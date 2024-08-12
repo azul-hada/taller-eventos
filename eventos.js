@@ -1,7 +1,7 @@
-let divPresentation = 
+let divPresentation = getElementsByTagName("div");
 
 function saludoDelDiv(){
-    alert("Hola! soy el div")
+    alert("Hola! soy el div");
 }
 
-document.getElementsByTagName("div").addEventListener("click", saludoDelDiv())
+divPresentation.addEventListener("click", saludoDelDiv);
