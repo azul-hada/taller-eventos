@@ -1,7 +1,20 @@
-let divPresentation = document.getElementById("boton");
+let botonSaluda = document.getElementById("boton");
 
-function saludoDelDiv(){
+function botonSaludando(event){
+    alert("Hola!");
+    event.stopPropagation();
+}
+
+
+
+botonSaluda.addEventListener("click", botonSaludando);
+
+/*...Parte cinco...*/
+
+let div = document.getElementById("div");
+
+function saludoDiv(){
     alert("Hola! soy el div");
 }
 
-divPresentation.addEventListener("click", saludoDelDiv);
+div.addEventListener("click", saludoDiv);
