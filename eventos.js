@@ -1,4 +1,4 @@
-let divPresentation = getElementsByTagName("div");
+let divPresentation = getElementsById("boton");
 
 function saludoDelDiv(){
     alert("Hola! soy el div");
